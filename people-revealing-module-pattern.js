@@ -24,7 +24,7 @@ var people = (function() {
     _render();
     
     function _render() {
-        _$ul.html(Mustache.render(_template, {people: _peopleList}));
+        _$ul.html(Mustache.render(_template, { people: _peopleList } ));
         events.emit("peopleChanged", _peopleList);
     }    
     
