@@ -19,8 +19,8 @@ var validationHelper = (function() {
         return person.charAt(0).toUpperCase() + person.slice(1);
     }
     
-    function _isInputFieldEmpty() {
-        if(_$input.val() === '') {
+    function _isInputFieldEmpty($inputField) {
+        if($inputField.val() === '') {
             return true;
         }
 

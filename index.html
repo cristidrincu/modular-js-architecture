@@ -17,7 +17,12 @@
 
 <body>
     <h1>Modular Javascript</h1>
-    
+    <div id="statsModule">
+        Stats
+        <script id="stats-template" type="text/template">
+            <p>people: {{peopleStats}}</p>
+        </script>
+    </div>
     <div id="peopleModule">
             <h1>People</h1>
             <input placeholder="name" type="text">
@@ -38,8 +43,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     
-    <script src="people_module.js"></script>
-<!--    <script src="validation-helper.js"></script>-->
-<!--    <script src="revealing-module-pattern.js"></script>    -->
+    <script src="pubsub.js"></script>
+    <script src="validation-helper.js"></script>
+    <script src="stats-revealing-module-pattern.js"></script>
+<!--    <script src="people_module.js"></script>    -->    
+    <script src="people-revealing-module-pattern.js"></script>    
 </body>
 </html>
