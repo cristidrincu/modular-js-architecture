@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SELF CONTAINED, SELF EXECUTING MODULE</title>
+  <meta name="description" content="JS Scripts">
+  <meta name="author" content="Cristian Drincu">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <h1>Modular Javascript</h1>   
+    <div id="peopleModule">
+            <h1>People</h1>
+            <input placeholder="name" type="text">
+            <button id="addPerson">Add Person</button>
+            <ul id="people">
+                <script id="people-template" type="text/template">
+                    {{#people}}
+                        <li>
+                            <span>{{.}}</span>
+                            <i class="del">X</i>
+                        </li>
+                    {{/people}}
+                </script>
+            </ul>
+            <p class="errorField">Cannot add person, it's already present</p>
+        </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    
+<!--  App related scripts  -->
+    <script src="people_module.js"></script>            
+</body>
+</html>

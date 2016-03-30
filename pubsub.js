@@ -1,4 +1,10 @@
 var events = {
+//    events: {
+//        peopleChanged: [someHandlerFunction, someOtherFunctionHandler]
+//    }
+//    and then call
+//    events.on('peopleChanged', someOtherFunctionHandler)
+//    events.emit('peopleChanged', 3);
     events: {},
     on: function(eventName, fn) {
         this.events[eventName] = this.events[eventName] || [];
